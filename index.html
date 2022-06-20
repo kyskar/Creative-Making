@@ -1,0 +1,43 @@
+<!-- START RIGHT -->
+<!DOCTYPE html>
+<html lang="en-UK">
+  <head>
+    <meta charset="utf-8">
+    <TITLE>Phone-Life</TITLE>
+    <link rel='stylesheet' href='style.css'/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/velocity.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+    <!-- <script src="https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js"></script> -->
+  </head>
+</html>
+
+<body>
+  <div id="startPageContainer">
+    <h1 class="startDiv" id="title">Phone Life</h1>
+    <div class="startDiv" id="explanation"></div>
+    <div class="startDiv" id="graphic"></div>
+    <div>
+      <div class="canvasDiv" id="canvasDiv1" onmouseover="animateSVG(this)" onclick="toggleSelection(this)">
+        <object type="image/svg+xml" data="assets/materials.svg" class="animCanvas" id="svg1a"></object>
+        <object type="image/svg+xml" data="assets/money.svg" class="animCanvas" id="svg1b"></object>
+      </div>
+      <div class="canvasDiv" id="canvasDiv2" onmouseover="animateSVG(this)" onclick="toggleSelection(this)">
+        <object type="image/svg+xml" data="assets/miner.svg" class="animCanvas" id="svg2a"></object>
+        <object type="image/svg+xml" data="assets/money.svg" class="animCanvas" id="svg2b"></object>
+      </div>
+      <!-- <svg onclick="svgTest()">
+        <rect id="rect" width="25" height="25" x="10%" y="10%" fill="gray" stroke="rgba(80, 80, 80, 1)" stroke-width="0px"></rect>
+      </svg> -->
+    </div>
+    <div class="startDiv"><button id="buttonText">Start</button></div>
+    <div class="horizontalDiv">
+      <div class="finalButton"><button id="buttonOne" ><a href="https://therestartproject.org/" target="_blank" rel="noopener noreferrer">The Restart Project</a></button></div>
+      <div class="finalButton"><button id="buttonTwo"><a href="https://www.ifixit.com/" target="_blank" rel="noopener noreferrer">iFixit</a></button></div>
+      <div class="finalButton"><button id="buttonThree"><a href="https://repair.eu/" target="_blank" rel="noopener noreferrer">Right to Repair EU</a></button></div>
+    </div>
+    <div class="startDiv"></div>  
+  </div>
+  <script src="js/script.js"></script>
+</body>

@@ -1,0 +1,59 @@
+body {
+  font-family: system-ui;
+  background: rgb(249, 249, 248);
+  text-align: center;
+}
+a{color: white;}
+
+button {
+  color: white;
+  background-color: OliveDrab;
+  border: none;
+  padding: 10px;
+  margin: 10px
+}
+button:hover {transform: scale(1.1);}
+
+object {
+  position:relative
+}
+
+.startDiv {
+  display: none;
+  animation-name: appear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+
+/* STYLE THESE SECTIONS */
+#title {
+  color: Orange;
+}
+#explanation {
+  color: cadetblue;
+}
+
+
+/* constant height for graphic divs */
+.canvasDiv {
+  background-color:rgb(231, 243, 244);  /* REMOVE */
+
+  display: none;
+  width: 45%;
+  height: 10rem;
+}
+
+.horizontalDiv {padding: 15px;}
+.finalButton {display: none;}
